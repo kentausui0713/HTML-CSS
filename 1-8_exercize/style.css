@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+
+/*リスト*/
+.list {
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.list-item {
+  padding: 20px 0 20px 20px;
+}
+
+.list-item:nth-child(odd) {
+  background-color: gray;
+}
+
+/*box*/
+
+.box-zone {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 200px;
+  width: 30%;
+  margin: 0 5% 40px 0;
+  background-color: yellow;
+}
+
+.box:nth-child(3) {
+  margin: 0 0 40px 0;
+}
+
+.box:nth-child(6) {
+  margin: 0 0 40px 0;
+}
+
+.box:nth-child(9) {
+  margin: 0 0 40px 0;
+  background-color: orange;
+}
+
+.box:first-child {
+  background-color: orange;
+}
+
+.box:nth-child(5) {
+  background-color: orange;
+}
