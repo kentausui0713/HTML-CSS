@@ -1,11 +1,82 @@
-.flex {
-  background-color: #00c7ce;
-  height: 50vh;
-  padding: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.flex > div {
-  background-color: #fff;
-  margin: 5px;
-  font-size: 30px;
+header {
+  width: 100%;
+  background-color: rgb(245, 77, 245);
+}
+
+header .header-box {
+  padding: 30px 20px;
+  display: flex;
+}
+.header-box div {
+  height: 70px;
+  flex-basis: 140px;
+  background-color: pink;
+  justify-content: flex-end;
+  margin: 0 10px;
+}
+
+.header-box div:first-child {
+  margin: 0 auto 0 0;
+}
+
+.header-box div:last-child {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-left {
+  width: 300px;
+  background-color: lightgreen;
+}
+
+.main-right {
+  max-width: 700px;
+  flex-grow: 1;
+  background-color: green;
+}
+
+.main-right-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.main-right-box div {
+  flex-basis: 200px;
+  height: 130px;
+  margin: 10px;
+  background-color: yellow;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(0, 68, 255);
+}
+
+.footer-box {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-box div {
+  flex-basis: 45%;
+  max-width: 600px;
+  height: 40px;
+  background-color: rgb(197, 234, 248);
+  margin: 10px;
+}
+
+.footer-box div:last-child {
+  margin: 0 auto;
 }
